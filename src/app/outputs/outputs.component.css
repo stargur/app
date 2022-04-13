@@ -1,0 +1,30 @@
+.container{
+    margin-top: 30px;
+    margin-right: 70px;
+    border: 1px solid black;
+    border-radius: 25px;
+    max-width: 500px;
+}
+table tbody {
+    border-collapse: separate;
+    border-spacing: 0 30px;
+}
+
+th{
+    width:200px;
+    text-align:center;
+    border:none;
+    padding-bottom:15px
+    
+}
+td {
+    text-align: center;
+    padding:15 px;
+}
+
+#error{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    color:red
+}

@@ -1,0 +1,40 @@
+<form (ngSubmit)="submit(form)" #form="ngForm">
+<div class="container">
+    <div class="row">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default" >First Name</span>
+            <input type="text" class="form-control" id="firstName" maxlength="20" name="firstName" ngModel>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default" >Last Name</span>
+            <input type="text" class="form-control" maxlength="20" name="lastName" ngModel>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Birth Date</span>
+            <input type="text" class="form-control" placeholder="dd/mm/yyyy" name="date" ngModel maxlength="10" pattern="\d{1,2}\/\d{1,2}\/\d{4}" #date >
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-group mb-3">
+            <button class="btn-success" type="submit" id="button">Check Info</button>
+            <app-clear-button></app-clear-button>
+        </div>
+    </div>
+</div>
+</form>
+
+<!-- <script>
+    function submit(){
+        const btn = document.getElementById('button')
+        btn.addEventListener('click', (event) => {
+            event.preventDefault()
+            console.log(event.target);
+        })
+    }
+    submit()
+    
+</script> -->
